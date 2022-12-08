@@ -1,0 +1,30 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#ancor {
+  color: red;
+  border-bottom: 1px solid red;
+}
+
+#url-ancor {
+  cursor: pointer;
+}
+
+/* #full-loading-section {
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(27, 26, 26);
+} */
+
+@media only screen and (min-width: 960px) {
+  #full-loader-img {
+    width: 50%;
+    position: relative;
+    left: 25%;
+    text-align: center;
+    justify-content: center;
+  }
+}
