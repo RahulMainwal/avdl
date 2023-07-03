@@ -1,0 +1,92 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>YTDLR</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="image" property="og:image" content="https://www.codester.com/static/uploads/items/000/031/31701/icon.png">
+    <link rel="icon" href=https://www.codester.com/static/uploads/items/000/031/31701/icon.png">
+    <link rel="apple-touch-icon" href="https://www.codester.com/static/uploads/items/000/031/31701/icon.png">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+  </head>
+  <body onload="loading()"  class="bg-gray-50 h-full">
+  
+  
+  <section id="full-loading-section">
+    <div id="full-loader" style="position:absolute;
+left:50%;
+top:50%;
+transform:translate(-50%,-50%);"><img id="full-loader-img" width="100%" src="https://aquamarineexotic.com/adminpanel/assets/images/page-loading-old.gif"/>
+</div>
+  </section>
+  
+    <section id="card" style="display: none">
+    <nav class="bg-white shadow">
+    <div class="container flex items-center justify-center p-6 mx-auto text-gray-600 capitalize dark:text-gray-300">
+        <a href="/" id="youtube" class="text-gray-800 dark:text-black-700 hover:text-gray-800 border-black-500 mx-1.5 sm:mx-6">Youtube</a>
+        <a href="/instagram" id="instagram" class="text-gray-800 dark:text-black-700 hover:text-gray-800 border-black-500 mx-1.5 sm:mx-6">Instagram</a>
+    </div>
+</nav>
+    
+      <div class="p-8 md:p-12 lg:px-16 lg:py-24">
+        <div class="flex mx-auto max-w-lg text-center" style=" width: 200px;
+    height: auto;">
+          <img src="https://cdn.svgporn.com/logos/instagram.svg" width="100%" />
+        </div>
+
+        <div class="mx-auto mt-8 max-w-xl">
+          <div class="sm:flex sm:gap-4">
+            <div class="sm:flex-1">
+              <label for="email" class="sr-only">Url/Link of instagram</label>
+
+              <input
+                id="url-input"
+                type="text"
+                placeholder="Enter here url or link of youtube"
+                class="w-full rounded-md border-gray-200 bg-white p-3 text-gray-700 shadow-sm transition focus:border-white focus:outline-none focus:ring focus:ring-yellow-400"
+              />
+            </div>
+
+            <a
+              id="url-ancor"
+              style="  background: #f09433; 
+background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );"
+              class="group mt-8 flex w-full items-center justify-center gap-2 rounded-md bg-rose-600 px-5 py-3 text-white transition focus:outline-none focus:ring focus:ring-yellow-400 sm:mt-0 sm:w-auto"
+            >
+              Get Download
+
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 0 16 16"
+                class="h-5 w-5 rtl:rotate-180"
+              >
+                <g fill="none">
+                  <path
+                    d="M3.5 13h9a.75.75 0 0 1 .102 1.493l-.102.007h-9a.75.75 0 0 1-.102-1.493L3.5 13h9h-9zM7.898 1.007L8 1a.75.75 0 0 1 .743.648l.007.102v7.688l2.255-2.254a.75.75 0 0 1 .977-.072l.084.072a.75.75 0 0 1 .072.977l-.072.084L8.53 11.78a.75.75 0 0 1-.976.073l-.084-.073l-3.536-3.535a.75.75 0 0 1 .977-1.133l.084.072L7.25 9.44V1.75a.75.75 0 0 1 .648-.743L8 1l-.102.007z"
+                    fill="currentColor"
+                  ></path>
+                </g>
+              </svg>
+              Links
+            </a>
+          </div>
+        </div>
+        <div class="my-10 px-1 mx-auto mt-8 max-w-xl" id="url-links"></div>
+        <div class="flex mx-auto max-w-lg text-center" id="thumbnailUrlConatiner" style=" width: 200px;
+    height: auto;">
+          <img src="" id="thumbnailUrl" width="100%" />
+        </div>
+
+        <div style="display: none" class="my-10 mx-auto max-w-lg text-center" id="loader">Loading...</div>
+      </div>    
+    </section>
+  </body>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+  <script src="instagram.js"></script>
+  <script src="common.js"></script>
+</html>

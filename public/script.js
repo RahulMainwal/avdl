@@ -93,7 +93,7 @@ const getYoutubeUrls = async ({ url }) => {
           : "Audio." + x.mimeType.split(" ", 2)[0].slice(6).replace(";", "")
       } (${x.qualityLabel ? x.qualityLabel : x.audioQuality}) - ${
         x.hasAudio ? "Width Audio" : "No Audio"
-      }</a> <br/><br/>`;
+      }</a>`;
       urlLinks.appendChild(div);
     });
 

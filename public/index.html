@@ -12,6 +12,7 @@
   </head>
   <body onload="loading()"  class="bg-gray-50 h-full">
   
+  
   <section id="full-loading-section">
     <div id="full-loader" style="position:absolute;
 left:50%;
@@ -21,6 +22,13 @@ transform:translate(-50%,-50%);"><img id="full-loader-img" width="100%" src="htt
   </section>
   
     <section id="card" style="display: none">
+    <nav class="bg-white shadow">
+    <div class="container flex items-center justify-center p-6 mx-auto text-gray-600 capitalize dark:text-gray-300">
+        <a href="/" id="youtube" class="text-gray-800 dark:text-black-700 hover:text-gray-800 border-black-500 mx-1.5 sm:mx-6">Youtube</a>
+        <a href="/instagram" id="instagram" class="text-gray-800 dark:text-black-700 hover:text-gray-800 border-black-500 mx-1.5 sm:mx-6">Instagram</a>
+    </div>
+</nav>
+    
       <div class="p-8 md:p-12 lg:px-16 lg:py-24">
         <div class="mx-auto max-w-lg text-center">
           <h2 class="text-4xl font-bold text-gray-900 md:text-3xl">
@@ -77,4 +85,5 @@ transform:translate(-50%,-50%);"><img id="full-loader-img" width="100%" src="htt
   </body>
   <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
   <script src="script.js"></script>
+  <script src="common.js"></script>
 </html>
