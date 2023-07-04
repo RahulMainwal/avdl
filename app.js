@@ -20,7 +20,7 @@ app.get("/instagram", (req, res) => {
 });
 
 app.get("/urls/", async (req, res) => {
-  if (req.get("host") === "lqgm8j-4000.csb.app") {
+  if (req.get("host") === "avdl.vercel.app") {
     try {
       const url = req.query.url;
       if (!url) {
@@ -54,7 +54,7 @@ app.get("/urls/", async (req, res) => {
 });
 
 app.get("/urls/instagram", async (req, res) => {
-  if (req.get("host") === "lqgm8j-4000.csb.app") {
+  if (req.get("host") === "avdl.vercel.app") {
     const url = req.query.url;
     if (!url) {
       return res.send({
